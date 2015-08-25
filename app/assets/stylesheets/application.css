@@ -1,0 +1,545 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body
+{
+ width: 100%;
+ background-image: url("/assets/background.jpg");
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: 0% 60%;
+}
+
+.background::before {
+  background-color: black;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: opacity(65%);
+  -moz-filter: opacity(65%);
+  -o-filter: opacity(65%);
+}
+
+.background {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.container {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Open Sans';
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	margin-top: 65px;
+	margin-bottom: 50px;
+}
+
+nav ul{
+	text-align: center;
+	list-style-type: none;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	margin-right: 40px;
+}
+
+nav a {
+	color: #9f9f9f;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+nav li:hover a {
+	color: #fff;
+	font-weight: 700;
+}
+
+/* ----------------- Header layout ---------------------- */
+header {
+	text-align: center;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 12px;
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
+
+.home_header h1 {
+	margin-top: 170px;
+}
+
+header p {
+	color: #9f9f9f;
+	text-transform: uppercase;
+	font-weight: 300;
+	/*margin-bottom: 265px;*/
+	margin-top: 0px;
+}
+
+/* ----------------------- Main Home videos ---------------------------- */
+.home_videos .container_titre {
+	margin-top: 250px;
+}
+
+.home_videos .titre {
+	width: 10%;
+	display: inline-block;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+.home_videos .titre:nth-child(2) {
+	margin-left: 79%;
+	text-align: right;
+}
+
+.home_videos .titre h2 {
+	color: #fff;
+}
+
+.home_videos .titre p {
+	color: #6f6f6f;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.home_videos .home_videos-col3 {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.video1 {
+	padding-top: 1.5%;
+	padding-right: 1.5%;
+	padding-bottom: 1.5%;
+	border-right: 1px solid #9f9f9f;
+}
+
+.video2 {
+	padding-top: 1.5%;
+	padding-right: 0.75%;
+	padding-bottom: 1.5%;
+	padding-left: 0.75%;	
+}
+
+.video3 {
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1.5%;	
+	border-left: 1px solid #9f9f9f;	
+}
+
+.home_videos .home_videos-col3 img {
+	width: 100%;
+}
+
+.home_videos .container_titre {
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.home_videos .home_videos-col3 p {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+/* ----------------------- Home Upcoming gigs --------------------------- */
+
+.home_gigs .titre h2 {
+	color: #fff;
+	border-bottom: 1px solid #9f9f9f;
+	border-top: 1px solid #9f9f9f;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-top: 80px;
+	margin: 0;
+}
+
+.home_gigs table {
+	width: 100%;
+}
+
+.home_gigs tr {
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.home_gigs .mois {
+	width: 5%;
+	color: #9f9f9f;
+	text-transform: uppercase;
+	font-size: 9px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.home_gigs .jour {
+	width: 10%;
+	color: #fff;
+	font-size: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.home_gigs .ville {
+	width: 41%;
+	color: #9f9f9f;
+	font-size: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;	
+}
+
+.home_gigs .lieu {
+	width: 43%;
+	color: #9f9f9f;
+	font-size: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;	
+}
+
+.home_gigs p {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.home_gigs a {
+	color: #9f9f9f;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+/* ------------------------ Page News & Contact--------------------------------- */
+.news, .contact, .photos, .bio, .music {
+	margin-top: 50px;
+}
+
+.news h2, .contact h2, .photos h2, .bio h2, .music h2 {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 2px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.news .news-col2, .contact .contact-col2 {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.news .news-col2.un, .contact .contact-col2.un {
+	width: 70%;
+	padding-right: 25px;
+}
+
+.news .news-col2.un h3 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.news .news-col2.un p {
+	color: #9f9f9f;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+.news .news-col2.un img {
+	width: 100%;
+}
+
+.news .news-col2.un .pages {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 40px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: 1px solid #9f9f9f;
+	color: #9f9f9f;
+}
+
+.news .news-col2.un .pages:hover {
+	background-color: #4c4c4c;
+	border-color: #4c4c4c;
+}
+
+.news .news-col2.un .pagination {
+	padding-top: 20px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border-top: 1px solid #9f9f9f;
+}
+
+.news .news-col2.deux, .contact .contact-col2.deux {
+	width: 28%;
+}
+
+.news .news-col2.deux input, .contact .contact-col2.deux input {
+	width: 100%;
+	background-color: #000;
+	opacity: 0.2;
+	padding: 3px;
+	margin-top: 33px;
+	font-size: 12px;
+}
+
+.news .news-col2.deux .latest h2, .contact .contact-col2.deux .latest h2 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	border: none;
+	padding-bottom: 10px;
+	padding-top: 38px;
+}
+
+.news .news-col2.deux .latest h3, .contact .contact-col2.deux .latest h3 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.news .news-col2.deux .latest p, .contact .contact-col2.deux .latest p {
+	color: #9f9f9f;
+	font-size: 12px;
+}
+
+.contact {
+	padding-bottom: 30px;
+}
+
+.contact .contact-col2.un {
+	margin-top: 10px;
+}
+
+.contact .contact-col2.un input {
+	width: 40%;
+	background-color: #000;
+	opacity: 0.2;
+	color: #fff;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.contact .contact-col2.un input:last-child {
+	width: 25%;
+	opacity: 0.5;
+	border: none;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.contact .contact-col2.un textarea {
+	width: 80%;
+	background-color: #000;
+	opacity: 0.2;
+	color: #fff;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.contact .contact-col2.un p {
+	color: #9f9f9f;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.contact .contact-col2.un span {
+	font-weight: 400;
+}
+
+/* ---------------------- Pages Photos ----------------------------- */
+
+.photos {
+	padding-bottom: 40px;
+}
+
+.photos .photos1, .photos .photos2, .photos .photos3 {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.photos .photos1 .photo1-col2, .photos .photos2 .photo2-col3, .photos .photos3 .photo3-col4 {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;	
+}
+
+.photos img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.photos .photos1 .photo1-col2.un {
+	width: 66.5%;
+}
+
+.photos .photos1 .photo1-col2.deux {
+	width: 32.5%;
+}
+
+.photos .photos2 .photo2-col3.un {
+	width: 40.5%;
+}
+
+.photos .photos2 .photo2-col3.deux {
+	width: 18%;
+}
+
+.photos .photos3 .photo3-col4.un {
+	width: 29%;
+}
+
+.photos .photos3 .photo3-col4.quatre {
+	width: 27.5%;
+}
+
+.photos .photos3 .photo3-col4.trois {
+	width: 13%;
+}
+
+/* --------------------- Pages Bio -------------------------------- */
+.bio_inside {
+	width: 70%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.bio_image img {
+	width: 56%;
+	margin-left: 235px;
+}
+
+.bio_image {
+	width: 125%;
+  background-image: url("/assets/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0% 80%;
+  margin-left: -112px;
+  padding-left: 10px;
+}
+
+.bio_inside p {
+	font-size: 12px;
+	color: #9f9f9f;
+}
+
+/* --------------------- Footer layout -----------------------------*/
+.about {
+	border-top: 1px solid #9f9f9f;
+	border-bottom: 1px solid #9f9f9f;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.about .about-col3 {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 31%;
+}
+
+.about .about-col3:nth-child(2) {
+	margin : 0 3% 0 3%;
+}
+
+.about .about-col3 img {
+	width: 100%;
+}
+
+.about .about-col3 h3 {
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.about .about-col3 p {
+	font-size: 10px;
+	color: #6f6f6f;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+.about .about-col3:last-child p {
+	letter-spacing: 2px;
+}
+
+.about .about-col3 h4 {
+	color: #b8b8b8;
+	font-size: 12px;
+}
+
+footer{ 
+	text-align: center;
+}
+
+footer .icons i {
+	color: #fff;
+	font-size: 15px;
+	margin-right: 30px;
+	margin-top: 30px;
+	margin-bottom: 55px;
+}
+
+footer p {
+	color: #f7f7f7;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin-bottom: 70px;
+}
+
+
+
+
+
+
+

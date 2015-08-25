@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Challenge</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="background">
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="home">home</a></li>
+					<li><a href="bio">bio</a></li>
+					<li><a href="photos">photos</a></li>
+					<li><a href="music">music</a></li>
+					<li><a href="">videos</a></li>
+					<li><a href="news">news</a></li>
+					<li><a href="">tour</a></li>
+					<li><a href="contact">contact</a></li>
+				</ul>
+			</nav>
+			
+			
+			<%= yield %>
+			
+				<section class="about">
+					<div class="about-col3">
+						<h3>about obsidian</h3>
+						<p>The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and practical in purpose. With distinctive background options and various customization possibilities, Obsidian makes it easy to create the ultimate hub for your online identity.</p>
+					</div>
+					<div class="about-col3">
+						<h3>vivienne's omitted line</h3>
+						<img src="/assets/album-03-300x300.jpg" alt="couverture d'album" />
+					</div>
+					<div class="about-col3">
+						<h3>recent posts</h3>
+						<h4>Welcome to our redesigned website</h4>
+						<p>APRIL 1, 2015</p>
+						<h4>New tour dates posted</h4>
+						<p>DECEMBER 16, 2014</p>
+						<h4>History of Popular Music</h4>
+						<p>DECEMBER 15, 2014</p>
+					</div>	
+				</section>
+			</main>
+			<footer>
+				<div class="icons">
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-facebook-square"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+					<a href="#"><i class="fa fa-vimeo"></i></a>
+					<a href="#"><i class="fa fa-amazon"></i></a>
+					<a href="#"><i class="fa fa-apple"></i></a>
+					<a href="#"><i class="fa fa-soundcloud"></i></a>
+					<a href="#"><i class="fa fa-spotify"></i></a>
+				</div>
+
+				<p>obsidian music theme by audiotheme.</p>
+			</footer>
+
+		</div>
+	</div>
+</body>
+</html>
